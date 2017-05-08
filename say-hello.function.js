@@ -1,3 +1,3 @@
-module.exports = function SayHello() {
-    console.log("Hello World");
+module.exports = function Greeting() {
+    console.log("Greetings human!");
 };
