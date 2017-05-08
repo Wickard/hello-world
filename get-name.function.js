@@ -1,17 +1,7 @@
-  module.exports = function GetName() {
-  var prompt = require('prompt');
- 
-  // 
-  // Start the prompt 
-  // 
+var prompt = require('prompt');
+var Questions = require("./questions.function");
+
+module.exports = function GetName(question, callback) {
   prompt.start();
- 
-  // 
-  // Get two properties from the user: username and email 
-  // 
-  prompt.get(['username'], function (err, result) {
-    // 
-    // Log the results. 
-    // 
-    console.log( "Hello " + result.username + ". My name is Siris.");
-  });};
+  prompt.get(question, callback);
+};
